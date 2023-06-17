@@ -1,5 +1,6 @@
 import closeIcon from '../../assets/images/close-icon.svg';
 import { Order } from '../../types/Order';
+import { formatCurrency } from '../../utils/formatCurrency';
 
 import { Overlay, ModalBody, OrderDetails } from './styles';
 
@@ -12,6 +13,10 @@ export function OrderModal({ visible, order }: OrderModalProps) {
   if (!visible || !order) {
     return null;
   }
+
+  const total = order.products.reduce((total, { product, quantity }) => {
+    return total + (product.price * quantity);
+  }, 0);
 
   return (
     <Overlay>
@@ -53,10 +58,14 @@ export function OrderModal({ visible, order }: OrderModalProps) {
                 <span className="quantity">{quantity}x</span>
                 <div className="product-details">
                   <strong>{product.name}</strong>
-                  <span>{product.price}</span>
+                  <span>{formatCurrency(product.price)}</span>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="total">
+            <span>total</span>
+            <strong>{formatCurrency(total)}</strong>
           </div>
         </OrderDetails>
       </ModalBody>
