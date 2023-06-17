@@ -11,13 +11,11 @@ const orders: Order[] = [
       {
         _id: "456",
         quantity: 2,
-        product: [
-          {
-            name: "Pizza mussarela",
-            imagePath: "Image path here",
-            price: 40.00
-          }
-        ]
+        product: {
+          name: "Pizza mussarela",
+          imagePath: "1686095987313-quatro-queijos.png",
+          price: 40.00
+        }
       }
     ]
   }
