@@ -2,7 +2,7 @@
 import styled from 'styled-components/native';
 
 interface TextProps {
-  weight?: '400' | '600' | '700';
+  weight?: 'Regular' | 'Semibold' | 'Bold';
   color?: string;
   size?: number;
   opacity?: number;
