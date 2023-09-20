@@ -1,5 +1,5 @@
 import { ActivityIndicator } from 'react-native';
-import axios from 'axios';
+import { api } from '../utils/api';
 
 import {
   Container,
@@ -30,17 +30,29 @@ export function Main() {
   const [isLoading, setIsLoading] = useState(true);
   const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
+  const [isLoadingProducts, setIsLoadingProducts] = useState(false);
 
   useEffect(() => {
     Promise.all([
-      axios.get('http://172.18.0.1:3001/categories'),
-      axios.get('http://172.18.0.1:3001/products')
+      api.get('categories'),
+      api.get('products')
     ]).then(([categoriesResponse, productsResponse]) => {
       setCategories(categoriesResponse.data);
       setProducts(productsResponse.data);
       setIsLoading(false);
     });
   }, []);
+
+  async function handleSelectCategory(categoryId: string) {
+    const route = !categoryId
+    ? '/products'
+    : `/categories/${categoryId}/products`;
+
+    setIsLoadingProducts(true);
+    const { data } = await api.get(route);
+    setProducts(data);
+    setIsLoadingProducts(false);
+  }
 
   function handleSaveTable(table: string) {
     setSelectedTable(table);
@@ -115,19 +127,28 @@ export function Main() {
             <CategoriesContainer>
               <Categories
                 categories={categories}
+                onSelectCategory={handleSelectCategory}
               />
             </CategoriesContainer>
-            {products.length > 0 ? (
-              <MenuContainer>
-                <Menu products={products} onAddToCart={handleAddToCart} />
-              </MenuContainer>
-            ) : (
+            {isLoadingProducts ? (
               <CenteredContainer>
-                <Empty />
-                <Text color='#666' style={{ marginTop: 24 }}>
-                  Nenhum produto foi encontrado!
-                </Text>
+                <ActivityIndicator color="#D73035" size="large" />
               </CenteredContainer>
+            ) : (
+              <>
+              {products.length > 0 ? (
+                <MenuContainer>
+                  <Menu products={products} onAddToCart={handleAddToCart} />
+                </MenuContainer>
+              ) : (
+                <CenteredContainer>
+                  <Empty />
+                  <Text color='#666' style={{ marginTop: 24 }}>
+                    Nenhum produto foi encontrado!
+                  </Text>
+                </CenteredContainer>
+              )}
+              </>
             )}
           </>
       )}
