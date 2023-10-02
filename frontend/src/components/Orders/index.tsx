@@ -13,8 +13,8 @@ export function Orders() {
       transports: ['websocket'],
     });
 
-    socket.on('orders@new', (order) => {
-      setOrders(prevState => prevState.concat(order));
+    socket.on('orders@new', (newOrder: Order) => {
+      setOrders(prevState => prevState.concat(newOrder));
     });
   }, []);
 
