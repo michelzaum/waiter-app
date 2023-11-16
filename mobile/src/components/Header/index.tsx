@@ -1,6 +1,7 @@
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { Text } from '../Text';
-import { Container, Content, OrderHeader, Table } from './styles';
+import { Container, HeaderContainer, NotificationContainer, Content, OrderHeader, Table } from './styles';
+import { Notification } from '../Icons/Notification';
 
 interface HeaderProps {
   selectedTable: string;
@@ -11,13 +12,18 @@ export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
   return (
     <Container>
       {!selectedTable && (
-        <>
-          <Text size={14} opacity={0.9}>Bem vindo(a) ao</Text>
-          <Text size={24} weight='Bold'>
-            WAITER
-            <Text size={24}>APP</Text>
-          </Text>
-        </>
+        <HeaderContainer>
+          <View>
+            <Text size={14} opacity={0.9}>Bem vindo(a) ao</Text>
+            <Text size={24} weight='Bold'>
+              WAITER
+              <Text size={24}>APP</Text>
+            </Text>
+          </View>
+          <NotificationContainer>
+            <Notification />
+          </NotificationContainer>
+        </HeaderContainer>
       )}
 
       {selectedTable && (
