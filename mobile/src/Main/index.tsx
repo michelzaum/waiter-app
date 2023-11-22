@@ -18,6 +18,7 @@ import { TableModal } from '../components/TableModal';
 import { useEffect, useState } from 'react';
 import { Cart } from '../components/Cart';
 import { Text } from '../components/Text';
+import { Navigation } from '../components/Navigation';
 import { CartItem } from '../types/CartItem';
 import { Product } from '../types/Product';
 import { Empty } from '../components/Icons/Empty';
@@ -156,12 +157,15 @@ export function Main() {
       <Footer>
         <FooterContainer>
           {!selectedTable && (
-            <Button
-              onPress={() => setIsTableModalVisible(true)}
-              disabled={isLoading}
-            >
-              Novo pedido
-            </Button>
+            <>
+              <Button
+                onPress={() => setIsTableModalVisible(true)}
+                disabled={isLoading}
+              >
+                Novo pedido
+              </Button>
+              <Navigation />
+            </>
           )}
           {selectedTable && (
             <Cart
