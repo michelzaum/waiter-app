@@ -3,12 +3,7 @@ import { CategoryContainer, Icon } from './styles';
 
 import { Text } from '../Text';
 import { useState } from 'react';
-import { Category } from '../../types/Category';
-
-interface CategoriesProps {
-  categories: Category[];
-  onSelectCategory: (categoryId: string) => Promise<void>;
-}
+import { CategoriesProps } from './types';
 
 export function Categories({ categories, onSelectCategory }: CategoriesProps) {
   const [selectedCategory, setSelectedCategory] = useState('');

@@ -14,11 +14,7 @@ import { formatCurrency } from '../../utils/formatCurrency';
 import { ProductModal } from '../ProductModal';
 import { useState } from 'react';
 import { Product } from '../../types/Product';
-
-interface MenuProps {
-  onAddToCart: (product: Product) => void;
-  products: Product[];
-}
+import { MenuProps } from './types';
 
 export function Menu({ onAddToCart, products }: MenuProps) {
   const [isModalVIsible, setIsModalVisible] = useState(false);

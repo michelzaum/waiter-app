@@ -1,10 +1,7 @@
 import { SvgXml } from 'react-native-svg';
+import { IconProps } from './types';
 
-interface OrdersProps {
-  color?: string;
-}
-
-export function OrdersIcon({ color }: OrdersProps) {
+export function OrdersIcon({ color }: IconProps) {
   const markup = `<svg width="24" height="24" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M13.5 7H5.5M13.5 9.99988H5.5M10.5 13H5.5M16.949 18.396L15.959 18.8935C15.6785 19.0345 15.3481 19.0355 15.0667 18.8964L13.4942
   18.1188L11.9533 18.8929C11.672 19.0342 11.3406 19.0348 11.0588 18.8945L9.5 18.1185L7.94124 18.8945C7.65942 19.0348 7.32799 19.0342 7.04668

@@ -1,5 +1,4 @@
 import { FlatList, TouchableOpacity } from "react-native";
-import { CartItem } from "../../types/CartItem";
 
 import {
   Item,
@@ -16,18 +15,10 @@ import { formatCurrency } from "../../utils/formatCurrency";
 import { PlusCircle } from "../Icons/PlusCircle";
 import { MinusCircle } from "../Icons/MinusCircle";
 import { Button } from "../Button";
-import { Product } from "../../types/Product";
 import { OrderConfirmedModal } from "../OrderConfirmedModal";
 import { useState } from "react";
 import { api } from "../../utils/api";
-
-interface CartProps {
-  cartItems: CartItem[];
-  onAdd: (product: Product) => void;
-  onDecrement: (product: Product) => void;
-  onConfirmOrder: () => void;
-  selectedTable: string;
-}
+import { CartProps } from "./types";
 
 export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTable }: CartProps) {
   const [isLoading, setIsLoading] = useState(false);

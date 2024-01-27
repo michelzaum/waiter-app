@@ -2,11 +2,7 @@ import { Modal } from 'react-native';
 import { Container, OkButton } from './styles';
 import { CheckCircle } from '../Icons/CheckCircle';
 import { Text } from '../Text';
-
-interface OrderConfirmedModalProps {
-  visible: boolean;
-  onOk: () => void;
-}
+import { OrderConfirmedModalProps } from './types';
 
 export function OrderConfirmedModal({ visible, onOk }: OrderConfirmedModalProps) {
   return (

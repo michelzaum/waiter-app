@@ -4,12 +4,7 @@ import { Form, Header, ModalBody, Overlay, Input } from './styles';
 import { Close } from '../Icons/Close';
 import { Button } from '../Button';
 import { useState } from 'react';
-
-interface TableModalProps {
-  visible: boolean;
-  onClose: () => void;
-  onSave: (table: string) => void;
-}
+import { TableModalProps } from './types';
 
 export function TableModal({ visible, onClose, onSave }: TableModalProps) {
   const [table, setTable] = useState('');
