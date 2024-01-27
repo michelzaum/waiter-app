@@ -1,10 +1,7 @@
 import { SvgXml } from 'react-native-svg';
+import { IconProps } from './types';
 
-interface ProfileProps {
-  color?: string;
-}
-
-export function ProfileIcon({ color }: ProfileProps) {
+export function ProfileIcon({ color }: IconProps) {
   const markup = `<svg width="24" height="24" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.6 6.40002C13.8 7.60002 13.8 9.50002 12.6 10.6C11.4 11.7 9.49999 11.8 8.39999 10.6C7.29999 9.40002 7.19999
   7.50002 8.39999 6.40002C9.59999 5.30002 11.4 5.20002 12.6 6.40002M4.39999 17C5.99999 15.5 8.09999 14.5 10.5 14.5C12.8

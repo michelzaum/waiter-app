@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ActivityIndicator } from 'react-native';
 import { api } from '../utils/api';
 
@@ -15,14 +16,13 @@ import { Categories } from '../components/Categories';
 import { Menu } from '../components/Menu';
 import { Button } from '../components/Button';
 import { TableModal } from '../components/TableModal';
-import { useEffect, useState } from 'react';
 import { Cart } from '../components/Cart';
 import { Text } from '../components/Text';
 import { Navigation } from '../components/Navigation';
-import { CartItem } from '../types/CartItem';
-import { Product } from '../types/Product';
 import { Empty } from '../components/Icons/Empty';
-import { Category } from '../types/Category';
+import { CartItem } from '../components/Cart/types';
+import { Product } from '../types/Product';
+import { Category } from '../components/Categories/types';
 
 export function Main() {
   const [isTableModalVisible, setIsTableModalVisible] = useState(false);

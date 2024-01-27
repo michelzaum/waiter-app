@@ -2,11 +2,7 @@ import { TouchableOpacity, View } from 'react-native';
 import { Text } from '../Text';
 import { Container, HeaderContainer, NotificationContainer, Content, OrderHeader, Table } from './styles';
 import { Notification } from '../Icons/Notification';
-
-interface HeaderProps {
-  selectedTable: string;
-  onCancelOrder: () => void;
-}
+import { HeaderProps } from './types';
 
 export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
   return (

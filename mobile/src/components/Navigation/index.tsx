@@ -1,16 +1,10 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import { Text } from '../Text';
 import { NavigationContainer, ActiveIndicator, ItemContainer } from './styles';
 import { HomeIcon } from '../Icons/HomeIcon';
 import { OrdersIcon } from '../Icons/OrdersIcon';
 import { ProfileIcon } from '../Icons/ProfileIcon';
-
-interface NavigationItemsProps {
-  label: string;
-  Icon: ReactNode;
-  onPress: () => void;
-  isActive: boolean;
-}
+import { NavigationItemsProps } from './types';
 
 function NavigationItem({ onPress, label, Icon, isActive }: NavigationItemsProps) {
   return (
