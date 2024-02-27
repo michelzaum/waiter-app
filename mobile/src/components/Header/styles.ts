@@ -13,7 +13,7 @@ export const HeaderContainer = styled.View`
   justify-content: space-between;
 `;
 
-export const NotificationContainer = styled.View`
+export const NotificationContainer = styled.TouchableOpacity`
   background-color: #FFFFFF;
   border-radius: 50px;
   padding: 10px;
