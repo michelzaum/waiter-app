@@ -4,7 +4,7 @@ import { Container, HeaderContainer, NotificationContainer, Content, OrderHeader
 import { Notification } from '../Icons/Notification';
 import { HeaderProps } from './types';
 
-export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
+export function Header({ selectedTable, onCancelOrder, navigationProps }: HeaderProps) {
   return (
     <Container>
       {!selectedTable && (
@@ -16,7 +16,7 @@ export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
               <Text size={24}>APP</Text>
             </Text>
           </View>
-          <NotificationContainer>
+          <NotificationContainer onPress={() => navigationProps.navigation.navigate('Notifications')}>
             <Notification />
           </NotificationContainer>
         </HeaderContainer>

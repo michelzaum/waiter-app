@@ -2,10 +2,13 @@ import { Text } from "../../components/Text";
 import { Arrow } from "../../components/Icons/Arrow";
 import { Empty } from "../../components/Icons/Empty";
 import { NotificationItem } from "./notificationItem";
-import { INotification } from "./types/Notification";
+import { INotificationItem } from "./types/Notification";
 import { Container, Header, EmptyStateContainer } from './styles';
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { RootStackParamList, screenNames } from "../../routes";
+import { TouchableOpacity } from "react-native";
 
-const notificationsMock: INotification[] = [
+const notificationsMock: INotificationItem[] = [
   {
     id: '1',
     icon: '👨‍🍳️',
@@ -24,12 +27,19 @@ const notificationsMock: INotification[] = [
   }
 ];
 
-export function Notifications() {
+type NavigationProps = NativeStackScreenProps<RootStackParamList, screenNames>
+
+export function Notifications(navigationProps: NavigationProps) {
   return (
     <Container>
       <Header>
-        <Arrow />
-        <Text size={24} weight="Semibold">Notifications</Text>
+        <TouchableOpacity
+          style={{ flexDirection: 'row', alignItems: 'center', gap: 16 }}
+          onPress={() => navigationProps.navigation.navigate('Home')}
+        >
+          <Arrow />
+          <Text size={24} weight="Semibold">Notifications</Text>
+        </TouchableOpacity>
       </Header>
       {
         notificationsMock.length > 0

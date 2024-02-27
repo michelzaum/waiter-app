@@ -1,9 +1,9 @@
 import React from 'react';
-import { Main } from './src/Main';
+import { Routes } from './src/routes';
 
 function App(): JSX.Element {
   return (
-    <Main />
+    <Routes />
   );
 }
 

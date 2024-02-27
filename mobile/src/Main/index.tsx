@@ -23,8 +23,9 @@ import { Empty } from '../components/Icons/Empty';
 import { CartItem } from '../components/Cart/types';
 import { Product } from '../types/Product';
 import { Category } from '../components/Categories/types';
+import { NavigationProps } from './types';
 
-export function Main() {
+export function Main(navigationProps: NavigationProps) {
   const [isTableModalVisible, setIsTableModalVisible] = useState(false);
   const [selectedTable, setSelectedTable] = useState('');
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -118,6 +119,7 @@ export function Main() {
         <Header
           selectedTable={selectedTable}
           onCancelOrder={handleResetOrder}
+          navigationProps={navigationProps}
         />
         {isLoading ? (
           <CenteredContainer>
@@ -164,7 +166,7 @@ export function Main() {
               >
                 Novo pedido
               </Button>
-              <Navigation />
+              <Navigation navigationProps={navigationProps} />
             </>
           )}
           {selectedTable && (

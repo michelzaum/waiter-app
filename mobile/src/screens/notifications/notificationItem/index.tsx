@@ -1,6 +1,6 @@
 import { FlatList, View } from 'react-native';
 import { Text } from '../../../components/Text';
-import { INotificationProps } from '../types/NotificationsProps';
+import { INotificationItemsProps } from '../types/NotificationsProps';
 import {
   NotificationItemContainer,
   NotificationItemContent,
@@ -8,7 +8,7 @@ import {
   NotificationItemDetalis
 } from './styles';
 
-export function NotificationItem({ notifications }: INotificationProps) {
+export function NotificationItem({ notifications }: INotificationItemsProps) {
   return (
     <FlatList
       data={notifications}
