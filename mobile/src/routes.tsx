@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Main } from './Main';
 import { Profile } from './screens/profile';
 import { Notifications } from './screens/notifications';
-import { Text } from './components/Text';
+import { Orders } from './screens/orders';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -23,9 +23,7 @@ export function Routes() {
         <Stack.Screen name='Home' component={Main} />
         <Stack.Screen name='Profile' component={Profile} />
         <Stack.Screen name='Notifications' component={Notifications} />
-        <Stack.Screen name='Orders'>
-          {() => <Text>Orders</Text>}
-        </Stack.Screen>
+        <Stack.Screen name='Orders' component={Orders} />
       </Stack.Navigator>
     </NavigationContainer>
   );
