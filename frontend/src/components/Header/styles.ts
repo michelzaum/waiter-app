@@ -4,12 +4,12 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   height: 198px;
-  align-items: center;
+  width: 100%;
 `;
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 1216px;
+  max-width: 1550px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -4,14 +4,22 @@ import { GlobalStyles } from './styles/GlobalStyles';
 
 import { Header } from './components/Header';
 import { Orders } from './components/Orders';
+import { NavigationBar } from './components/NavigationBar';
 
 export function App() {
   return (
     <>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <NavigationBar />
+      </div>
+      <div>
+        <Orders />
+      </div>
       <GlobalStyles />
-      <Header />
-      <Orders />
       <ToastContainer position='bottom-center' />
-    </>
+   </>
   );
 }
