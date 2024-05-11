@@ -8,8 +8,8 @@ import {
   RestartDay,
   RestartDayText,
 } from './styles';
-import homeLogo from '../../assets/images/home-icon.svg';
-import restartIcon from '../../assets/images/restart-icon.svg';
+import { HomeIcon } from '../../assets/images/Icons/HomeIcon';
+import { RestartIcon } from '../../assets/images/Icons/RestartIcon';
 
 export function Header() {
   return (
@@ -17,13 +17,16 @@ export function Header() {
       <Content>
         <PageDetails>
           <Title>
-            <img src={homeLogo} alt="Home icon" height={32} width={32}/>
+            {<HomeIcon style={{
+              height: 32,
+              width: 32
+            }} />}
             <PageName>Home</PageName>
           </Title>
           <PageDescription>Acompanhe os pedidos dos clientes</PageDescription>
         </PageDetails>
         <RestartDay>
-          <img src={restartIcon} alt="Restart the day" />
+          {<RestartIcon />}
           <RestartDayText>Reiniciar o dia</RestartDayText>
         </RestartDay>
       </Content>

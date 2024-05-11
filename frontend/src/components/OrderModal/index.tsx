@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import closeIcon from '../../assets/images/close-icon.svg';
+import { CloseIcon } from '../../assets/images/Icons/CloseIcon';
 import { Order } from '../../types/Order';
 import { formatCurrency } from '../../utils/formatCurrency';
 
@@ -49,7 +49,7 @@ export function OrderModal({
         <header>
           <strong>Mesa {order.table}</strong>
           <button type='button' onClick={onClose}>
-            <img src={closeIcon} alt='Icone de fechar'/>
+            {<CloseIcon />}
           </button>
         </header>
 
