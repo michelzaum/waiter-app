@@ -4,7 +4,7 @@ import {
   RightAction,
   DataCount,
   TitleContainer,
-  ProductsCountContainer,
+  DataCountContainer,
   Table,
   TableHeader,
   TableData,
@@ -35,10 +35,10 @@ export function Categories() {
   return (
     <Container>
       <TitleContainer>
-        <ProductsCountContainer>
+        <DataCountContainer>
           <Title>Categorias</Title>
           <DataCount>{categoriesMockData.length}</DataCount>
-        </ProductsCountContainer>
+        </DataCountContainer>
         <RightAction>
           Nova categoria
         </RightAction>

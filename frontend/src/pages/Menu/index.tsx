@@ -4,7 +4,7 @@ import {
   RightAction,
   DataCount,
   TitleContainer,
-  ProductsCountContainer,
+  DataCountContainer,
   Table,
   TableHeader,
   TableData,
@@ -39,10 +39,10 @@ export function Menu() {
   return (
     <Container>
       <TitleContainer>
-        <ProductsCountContainer>
+        <DataCountContainer>
           <Title>Produtos</Title>
           <DataCount>{menuMockData.length}</DataCount>
-        </ProductsCountContainer>
+        </DataCountContainer>
         <RightAction>
           Novo produto
         </RightAction>

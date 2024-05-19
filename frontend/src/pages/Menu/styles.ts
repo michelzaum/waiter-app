@@ -12,7 +12,7 @@ export const TitleContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const ProductsCountContainer = styled.div`
+export const DataCountContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;

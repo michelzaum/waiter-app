@@ -4,7 +4,7 @@ import {
   RightAction,
   DataCount,
   TitleContainer,
-  ProductsCountContainer,
+  DataCountContainer,
   Table,
   TableHeader,
   TableData,
@@ -37,10 +37,10 @@ export function Users() {
   return (
     <Container>
       <TitleContainer>
-        <ProductsCountContainer>
+        <DataCountContainer>
           <Title>Usuários</Title>
           <DataCount>{usersMockData.length}</DataCount>
-        </ProductsCountContainer>
+        </DataCountContainer>
         <RightAction>
           Novo usuário
         </RightAction>
