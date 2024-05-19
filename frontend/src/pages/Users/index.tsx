@@ -12,45 +12,43 @@ import {
   TableRowData,
 } from './styles';
 
-const menuColumns = [
-  'Imagem', 'Nome', 'Categoria', 'Preço', 'Ações',
+const usersColumns = [
+  'Nome', 'E-mail', 'Cargo', 'Ações',
 ];
 
-const menuMockData = [
+const usersMockData = [
   {
     id: 1,
-    image: 'image here',
-    name: 'Frango com catupiry, Quatro queijos',
-    category: 'Pizza',
-    price: 'R$ 40,00',
+    name: 'Fulano de Tal',
+    email: 'fulano@gmail.com',
+    role: 'Garçom',
     actions: 'ver/excluir',
   },
   {
     id: 2,
-    image: 'image here',
-    name: 'Frango com catupiry, Quatro queijos',
-    category: 'Pizza',
-    price: 'R$ 40,00',
+    name: 'Fulano de Tal',
+    email: 'fulano@gmail.com',
+    role: 'Garçom',
     actions: 'ver/excluir',
   },
 ];
 
-export function Menu() {
+export function Users() {
   return (
     <Container>
       <TitleContainer>
         <DataCountContainer>
-          <Title>Produtos</Title>
-          <DataCount>{menuMockData.length}</DataCount>
+          <Title>Usuários</Title>
+          <DataCount>{usersMockData.length}</DataCount>
         </DataCountContainer>
         <RightAction>
-          Novo produto
+          Novo usuário
         </RightAction>
       </TitleContainer>
       <Table cellSpacing={0}>
         <thead>
           <TableRowHeader>
-            {menuColumns.map(column => (
+            {usersColumns.map(column => (
               <TableHeader key={column}>
                 {column}
               </TableHeader>
@@ -58,12 +56,11 @@ export function Menu() {
           </TableRowHeader>
         </thead>
         <tbody>
-          {menuMockData.map(tableData => (
+          {usersMockData.map(tableData => (
             <TableRowData key={tableData.id}>
-              <TableData>{tableData.image}</TableData>
               <TableData>{tableData.name}</TableData>
-              <TableData>{tableData.category}</TableData>
-              <TableData>{tableData.price}</TableData>
+              <TableData>{tableData.email}</TableData>
+              <TableData>{tableData.role}</TableData>
               <TableData>{tableData.actions}</TableData>
             </TableRowData>
           ))}

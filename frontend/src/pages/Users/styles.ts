@@ -28,7 +28,7 @@ export const RightAction = styled.button`
   border: none;
   font-size: 14px;
   font-weight: 600;
-  color: #D73035;
+  color: rgba(215, 48, 53, 1);
 `;
 
 export const DataCount = styled.span`
@@ -56,9 +56,10 @@ export const TableRowData =  styled.tr`
   background-color: rgba(255, 255, 255, 1);
 `;
 
-export const TableHeader = styled.th`
+export const TableHeader = styled.th<{isBiggestColumn?: boolean}>`
   text-align: left;
   padding: 1rem;
+  width: ${({ isBiggestColumn }) => isBiggestColumn ? '100%' : ''};
 `;
 
 export const TableData = styled.td`
