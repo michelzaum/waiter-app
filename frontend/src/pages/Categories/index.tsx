@@ -16,7 +16,7 @@ const categoriesColumns = [
   'Emoji', 'Nome', 'Ações',
 ];
 
-const menuMockData = [
+const categoriesMockData = [
   {
     id: 1,
     emoji: '🍕️',
@@ -37,7 +37,7 @@ export function Categories() {
       <TitleContainer>
         <ProductsCountContainer>
           <Title>Categorias</Title>
-          <DataCount>{menuMockData.length}</DataCount>
+          <DataCount>{categoriesMockData.length}</DataCount>
         </ProductsCountContainer>
         <RightAction>
           Nova categoria
@@ -54,7 +54,7 @@ export function Categories() {
           </TableRowHeader>
         </thead>
         <tbody>
-          {menuMockData.map(tableData => (
+          {categoriesMockData.map(tableData => (
             <TableRowData key={tableData.id}>
               <TableData>{tableData.emoji}</TableData>
               <TableData>{tableData.name}</TableData>
