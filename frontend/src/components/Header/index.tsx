@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Container,
   Content,
@@ -10,8 +11,19 @@ import {
 } from './styles';
 import { HomeIcon } from '../../assets/images/Icons/HomeIcon';
 import { RestartIcon } from '../../assets/images/Icons/RestartIcon';
+import { RestartDayModal } from '../RestartDayModal';
 
 export function Header() {
+  const [isRestartDayModalOpen, setIsRestartDayModalOpen] = useState(false);
+
+  function openRestartDayModal() {
+    setIsRestartDayModalOpen(true);
+  }
+
+  function closeRestartDayModal() {
+    setIsRestartDayModalOpen(false);
+  }
+
   return (
     <Container>
       <Content>
@@ -25,11 +37,15 @@ export function Header() {
           </Title>
           <PageDescription>Acompanhe os pedidos dos clientes</PageDescription>
         </PageDetails>
-        <RestartDay>
-          {<RestartIcon />}
+        <RestartDay onClick={openRestartDayModal}>
+          {<RestartIcon style={{ color: '#D73035' }} />}
           <RestartDayText>Reiniciar o dia</RestartDayText>
         </RestartDay>
       </Content>
+      <RestartDayModal
+        isVisible={isRestartDayModalOpen}
+        onClose={closeRestartDayModal}
+      />
     </Container>
   )
 }
