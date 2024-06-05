@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { CloseIcon } from '../../assets/images/Icons/CloseIcon';
-import { Order } from '../../types/Order';
-import { formatCurrency } from '../../utils/formatCurrency';
+import { CloseIcon } from '../../../assets/images/Icons/CloseIcon';
+import { Order } from '../../../types/Order';
+import { formatCurrency } from '../../../utils/formatCurrency';
 
 import { Overlay, ModalBody, OrderDetails, Actions } from './styles';
 
