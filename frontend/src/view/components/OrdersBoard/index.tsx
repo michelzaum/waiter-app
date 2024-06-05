@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import { Order } from '../../types/Order';
+import { Order } from '../../../types/Order';
 import { Board, OrdersContainer } from './styles';
 
 import { OrderModal } from '../OrderModal';
-import { api } from '../../utils/api';
+import { api } from '../../../utils/api';
 
 interface OrdersBoardProps {
   icon: string;

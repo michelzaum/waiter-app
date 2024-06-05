@@ -9,8 +9,8 @@ import {
   RestartDay,
   RestartDayText,
 } from './styles';
-import { HomeIcon } from '../../assets/images/Icons/HomeIcon';
-import { RestartIcon } from '../../assets/images/Icons/RestartIcon';
+import { HomeIcon } from '../../../assets/images/Icons/HomeIcon';
+import { RestartIcon } from '../../../assets/images/Icons/RestartIcon';
 import { RestartDayModal } from '../RestartDayModal';
 
 export function Header() {

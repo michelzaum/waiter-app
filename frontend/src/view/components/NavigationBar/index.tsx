@@ -1,6 +1,6 @@
 import { NavigationBarContainer } from './styles';
 
-import { LogoTextIcon } from '../../assets/images/Icons/LogoTextIcon';
+import { LogoTextIcon } from '../../../assets/images/Icons/LogoTextIcon';
 
 import { useNavigationBar } from './useNavigationBar';
 import { LinkItem } from './navigationItem';
@@ -21,6 +21,7 @@ export function NavigationBar() {
             linkText={link.linkText}
             onSelectedLink={() => handleActiveLink(link.id)}
             isActive={activeLink === link.id}
+            path={link.path}
           />
         ))}
       </div>
@@ -34,6 +35,7 @@ export function NavigationBar() {
             linkText={personalLink.linkText}
             onSelectedLink={() => handleActiveLink(personalLink.id)}
             isActive={activeLink === personalLink.id}
+            path={personalLink.path}
           />
         ))}
       </div>

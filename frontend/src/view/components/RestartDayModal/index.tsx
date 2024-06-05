@@ -1,5 +1,5 @@
-import { RestartIcon } from '../../assets/images/Icons/RestartIcon';
-import { CloseIcon } from '../../assets/images/Icons/CloseIcon';
+import { RestartIcon } from '../../../assets/images/Icons/RestartIcon';
+import { CloseIcon } from '../../../assets/images/Icons/CloseIcon';
 import { Overlay, ModalBody, ModalHeader, ModalContent, ModalActions } from './styles';
 
 interface RestartDayModalProps {
