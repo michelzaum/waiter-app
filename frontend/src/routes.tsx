@@ -5,6 +5,7 @@ import { Orders } from './view/components/Orders';
 import { OrdersHistory } from './view/pages/OrdersHistory';
 import { Users } from './view/pages/Users';
 import { PrivatePagesLayout } from './view/layout/PrivatePagesLayout';
+import { Login } from './view/pages/Login';
 
 export function Router() {
   return (
@@ -16,6 +17,7 @@ export function Router() {
         <Route path='/categories' element={<Categories />} />
         <Route path='/users' element={<Users />} />
       </Route>
+      <Route path='/login' element={<Login />} />
     </Routes>
   )
 }
