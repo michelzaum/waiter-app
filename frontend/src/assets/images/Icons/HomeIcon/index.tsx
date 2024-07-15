@@ -1,4 +1,4 @@
-import { IconProps } from "./model";
+import { IconProps } from "../model";
 
 export function HomeIcon(props?: IconProps) {
   return (

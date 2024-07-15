@@ -12,7 +12,7 @@ export function NavigationBar() {
     <NavigationBarContainer>
       {<LogoTextIcon />}
       <div>
-        {links.map((link) => (
+        {links.map((link, index) => (
           <LinkItem
             key={link.id}
             Icon={link.icon({
@@ -20,13 +20,14 @@ export function NavigationBar() {
             })}
             linkText={link.linkText}
             onSelectedLink={() => handleActiveLink(link.id)}
-            isActive={activeLink === link.id}
+            $isActive={activeLink === link.id}
             path={link.path}
+            testId={`link-item-${index}`}
           />
         ))}
       </div>
       <div>
-        {personalLinks.map((personalLink) => (
+        {personalLinks.map((personalLink, index) => (
           <LinkItem
             key={personalLink.id}
             Icon={personalLink.icon({
@@ -34,8 +35,9 @@ export function NavigationBar() {
             })}
             linkText={personalLink.linkText}
             onSelectedLink={() => handleActiveLink(personalLink.id)}
-            isActive={activeLink === personalLink.id}
+            $isActive={activeLink === personalLink.id}
             path={personalLink.path}
+            testId={`personal-link-item-${index}`}
           />
         ))}
       </div>

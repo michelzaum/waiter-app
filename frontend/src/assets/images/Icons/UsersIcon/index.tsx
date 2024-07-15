@@ -1,4 +1,4 @@
-import { IconProps } from "./model";
+import { IconProps } from "../model";
 
 export function UsersIcon({ style }: IconProps) {
   return (

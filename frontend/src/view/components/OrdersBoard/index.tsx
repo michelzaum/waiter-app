@@ -1,10 +1,7 @@
-import { useState } from 'react';
-import { toast } from 'react-toastify';
 import { Order } from '../../../types/Order';
 import { Board, OrdersContainer } from './styles';
-
 import { OrderModal } from '../OrderModal';
-import { api } from '../../../utils/api';
+import { useOrdersBoard } from './useOrdersBoard';
 
 interface OrdersBoardProps {
   icon: string;
@@ -15,46 +12,15 @@ interface OrdersBoardProps {
 }
 
 export function OrdersBoard({ icon, title, orders, onCancelOrder, onChangeOrderStatus }: OrdersBoardProps) {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const [selectedOrder, setSelectedOrder] = useState<null | Order>(null);
-  const [isLoading, setIsLoading] = useState(false);
-
-  function handleOpenModal(order: Order) {
-    setIsModalVisible(true);
-    setSelectedOrder(order);
-  }
-
-  function handleCloseModal() {
-    setIsModalVisible(false);
-    setSelectedOrder(null);
-  }
-
-  async function handleChangeOrderStatus() {
-    setIsLoading(true);
-
-    const newStatus = selectedOrder?.status === 'WAITING'
-    ? 'IN_PRODUCTION'
-    : 'DONE';
-
-    await api.patch(`/orders/${selectedOrder?._id}`, {
-      status: newStatus,
-    });
-
-    toast.success(`O pedido da mesa ${selectedOrder?.table} teve o status alterado!`);
-    onChangeOrderStatus(selectedOrder!._id, newStatus);
-    setIsLoading(false);
-    setIsModalVisible(false);
-  }
-
-  async function handleCancelOrder() {
-    setIsLoading(true);
-    await api.delete(`/orders/${selectedOrder?._id}`);
-
-    toast.success(`O pedido da mesa ${selectedOrder?.table} foi cancelado!`);
-    onCancelOrder(selectedOrder!._id);
-    setIsLoading(false);
-    setIsModalVisible(false);
-  }
+  const {
+    isModalVisible,
+    isLoading,
+    handleOpenModal,
+    handleCloseModal,
+    handleChangeOrderStatus,
+    handleCancelOrder,
+    selectedOrder,
+  } = useOrdersBoard();
 
   return (
     <Board>
@@ -62,9 +28,9 @@ export function OrdersBoard({ icon, title, orders, onCancelOrder, onChangeOrderS
         visible={isModalVisible}
         order={selectedOrder}
         onClose={handleCloseModal}
-        onCancelOrder={handleCancelOrder}
+        onCancelOrder={() => handleCancelOrder(onCancelOrder)}
         isLoading={isLoading}
-        onChangeOrderStatus={handleChangeOrderStatus}
+        onChangeOrderStatus={() => handleChangeOrderStatus(onChangeOrderStatus)}
       />
       <header>
         <span>{icon}</span>

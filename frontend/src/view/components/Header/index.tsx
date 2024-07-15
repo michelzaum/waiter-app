@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Container,
   Content,
@@ -12,17 +11,10 @@ import {
 import { HomeIcon } from '../../../assets/images/Icons/HomeIcon';
 import { RestartIcon } from '../../../assets/images/Icons/RestartIcon';
 import { RestartDayModal } from '../RestartDayModal';
+import { useHeaderController } from './useHeaderController';
 
 export function Header() {
-  const [isRestartDayModalOpen, setIsRestartDayModalOpen] = useState(false);
-
-  function openRestartDayModal() {
-    setIsRestartDayModalOpen(true);
-  }
-
-  function closeRestartDayModal() {
-    setIsRestartDayModalOpen(false);
-  }
+  const { isRestartDayModalOpen, openRestartDayModal, closeRestartDayModal } = useHeaderController();
 
   return (
     <Container>
