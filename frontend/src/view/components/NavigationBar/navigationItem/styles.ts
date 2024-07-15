@@ -12,8 +12,8 @@ export const LinkItemContainer = styled(Link)`
   color: rgba(51, 51, 51, 1);
 `;
 
-export const ActiveIndicator = styled.div<{ isActive: boolean }>`
+export const ActiveIndicator = styled.div<{ $isActive: boolean }>`
   height: 3px;
   width: 12px;
-  background-color: ${({ isActive }) => isActive ? 'red' : 'transparent'};
+  background-color: ${({ $isActive }) => $isActive ? 'red' : 'transparent'};
 `;

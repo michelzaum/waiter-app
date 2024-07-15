@@ -1,4 +1,4 @@
-import { FilterIcon } from '../../../assets/images/Icons/FilterIcons';
+import { FilterIcon } from '../../../assets/images/Icons/FilterIcon';
 import {
   Container,
   Title,

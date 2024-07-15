@@ -1,0 +1,882 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > Should render the App component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-eCqEok biBLaP"
+      >
+        <div
+          class="headerArea"
+        >
+          <header
+            class="sc-ioBKGh kpTblq"
+          >
+            <div
+              class="sc-fGZLLs kfPLUS"
+            >
+              <div
+                class="sc-kNIewn gaRNlB"
+              >
+                <div
+                  class="sc-fzyDgA dKQqWU"
+                >
+                  <svg
+                    fill="none"
+                    height="24"
+                    style="height: 32px; width: 32px;"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M19.5282 7.98627L13.7682 3.50595C12.7285 2.69667 11.2722 2.69667 10.2315 3.50595L4.47154 7.98627C3.76978 8.53251 3.35986 9.37155 3.35986 10.2595V17.2992C3.35986 18.8899 4.64914 20.1792 6.23986 20.1792H17.7599C19.3506 20.1792 20.6399 18.8899 20.6399 17.2992V10.2595C20.6399 9.37155 20.2299 8.53251 19.5282 7.98627Z"
+                      fill-rule="evenodd"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <h1
+                    class="sc-iggfBy FNvsr"
+                  >
+                    Home
+                  </h1>
+                </div>
+                <h2
+                  class="sc-ihaCbp hMDFRk"
+                >
+                  Acompanhe os pedidos dos clientes
+                </h2>
+              </div>
+              <button
+                class="sc-kGgVRv fXkGdi"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  style="color: rgb(215, 48, 53);"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 20.0033C14.9314 20.0035 17.6284 18.4012 19.0299 15.8265"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M20.0033 12C20.0033 7.57992 16.4201 3.9967 12 3.9967"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M12.0001 3.9967C9.06875 3.99646 6.37178 5.59883 4.97021 8.17344"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M3.99658 12C3.99658 16.4201 7.5798 20.0033 11.9999 20.0033"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M4.97021 8.17335C6.71968 4.95833 10.4273 3.33982 13.9744 4.2427C17.5215 5.14558 20.004 8.33975 20.0035 11.9999"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M3.99658 12C3.99602 15.6602 6.4786 18.8544 10.0257 19.7572C13.5728 20.6601 17.2804 19.0416 19.0298 15.8266"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M8.04526 8.17346H4.50879V4.63599"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M15.9546 15.8265H19.4911V19.364"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  class="sc-hYEWWG jXUiVQ"
+                >
+                  Reiniciar o dia
+                </span>
+              </button>
+            </div>
+          </header>
+        </div>
+        <div
+          class="navigationBarArea"
+        >
+          <div
+            class="sc-lnAZsp kGobhS"
+          >
+            <svg
+              fill="none"
+              height="29"
+              viewBox="0 0 42 29"
+              width="42"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.212 24L12.404 13.272L9.596 24H5.012L0.644 6.768H5.084L7.412 17.04L10.148 6.768H14.732L17.372 17.088L19.724 6.768H24.164L19.772 24H15.212ZM28.2965 17.88H36.8405L37.2005 18.864H27.6725L28.2965 17.88ZM38.6645 24L32.4485 7.992L26.2085 24H25.0565L31.8485 6.768H33.1205L39.8645 24H38.6645Z"
+                fill="#666666"
+              />
+            </svg>
+            <div>
+              <a
+                class="sc-kEfWCq duzGZb"
+                data-testid="link-item-0"
+                href="/"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.5282 7.98627L13.7682 3.50595C12.7285 2.69667 11.2722 2.69667 10.2315 3.50595L4.47154 7.98627C3.76978 8.53251 3.35986 9.37155 3.35986 10.2595V17.2992C3.35986 18.8899 4.64914 20.1792 6.23986 20.1792H17.7599C19.3506 20.1792 20.6399 18.8899 20.6399 17.2992V10.2595C20.6399 9.37155 20.2299 8.53251 19.5282 7.98627Z"
+                    fill-rule="evenodd"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  style="font-weight: 500;"
+                >
+                  Home
+                </span>
+                <div
+                  class="sc-fStzCH goNxFZ"
+                />
+              </a>
+              <a
+                class="sc-kEfWCq duzGZb"
+                data-testid="link-item-1"
+                href="/history"
+              >
+                <svg
+                  fill="none"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 9.5H8M16 12.4999H8M13 15.5H8M19.449 20.896L18.459 21.3935C18.1785 21.5345 17.8481 21.5355 17.5667 21.3964L15.9942 20.6188L14.4533 21.3929C14.172 21.5342 13.8406 21.5348 13.5588 21.3945L12 20.6185L10.4412 21.3945C10.1594 21.5348 9.82799 21.5342 9.54668 21.3929L8.00578 20.6188L6.4333 21.3964C6.15191 21.5355 5.82151 21.5345 5.54102 21.3935L4.55102 20.896C4.21321 20.7263 4.00001 20.3805 4 20.0025V4.99752C4 4.61947 4.2132 4.27374 4.551 4.104L5.541 3.60648C5.82149 3.46552 6.15189 3.46446 6.43328 3.60361L8.00576 4.3812L9.54666 3.60713C9.82797 3.46581 10.1594 3.46521 10.4412 3.60551L12 4.38151L13.5588 3.60551C13.8406 3.46521 14.172 3.46581 14.4533 3.60713L15.9942 4.3812L17.5667 3.60361C17.8481 3.46446 18.1785 3.46552 18.459 3.60648L19.449 4.104C19.7868 4.27374 20 4.61946 20 4.99752V20.0025C20 20.3806 19.7868 20.7263 19.449 20.896Z"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  style="font-weight: 500;"
+                >
+                  Histórico
+                </span>
+                <div
+                  class="sc-fStzCH goNxFZ"
+                />
+              </a>
+              <a
+                class="sc-kEfWCq duzGZb"
+                data-testid="link-item-2"
+                href="/menu"
+              >
+                <svg
+                  fill="none"
+                  height="21"
+                  viewBox="0 0 18 21"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 12.5H8M12 15.5H9M4 1.5V19.5M3 19.5H15C16.1046 19.5 17 18.6046 17 17.5V3.5C17 2.39543 16.1046 1.5 15 1.5H3C1.89543 1.5 1 2.39543 1 3.5V17.5C1 18.6046 1.89543 19.5 3 19.5ZM12.5 7.5C12.5 8.60457 11.6046 9.5 10.5 9.5C9.39543 9.5 8.5 8.60457 8.5 7.5C8.5 6.39543 9.39543 5.5 10.5 5.5C11.6046 5.5 12.5 6.39543 12.5 7.5Z"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  style="font-weight: 500;"
+                >
+                  Cardapio
+                </span>
+                <div
+                  class="sc-fStzCH goNxFZ"
+                />
+              </a>
+              <a
+                class="sc-kEfWCq duzGZb"
+                data-testid="link-item-3"
+                href="/users"
+              >
+                <svg
+                  fill="none"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="7.99835"
+                    cy="9.00854"
+                    r="3.49145"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="17.0021"
+                    cy="9.99897"
+                    r="2.50104"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M1.99585 20.5033V19.4859C1.99585 17.285 3.77959 15.5012 5.98051 15.5012H10.0162C12.2171 15.5012 14.0008 17.285 14.0008 19.4859V20.5033"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M17.0021 15.5012H18.1045C20.3055 15.5012 22.0892 17.285 22.0892 19.4859V20.5033"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  style="font-weight: 500;"
+                >
+                  Usuários
+                </span>
+                <div
+                  class="sc-fStzCH goNxFZ"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                class="sc-kEfWCq duzGZb"
+                data-testid="personal-link-item-0"
+                href="/users"
+              >
+                <svg
+                  fill="none"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.1 6.40002C13.3 7.60002 13.3 9.50002 12.1 10.6C10.9 11.7 9.00002 11.8 7.90002 10.6C6.80002 9.40002 6.70002 7.50002 7.90002 6.40002C9.10002 5.30002 10.9 5.20002 12.1 6.40002M3.90002 17C5.50002 15.5 7.60002 14.5 10 14.5C12.3 14.5 14.5 15.4 16.1 17M2 14C1.4 12.8 1 11.4 1 10C1 5 5 1 10 1C15 1 19 5 19 10C19 11.4 18.6 12.8 18 14"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  style="font-weight: 500;"
+                >
+                  Meu Perfil
+                </span>
+                <div
+                  class="sc-fStzCH goNxFZ"
+                />
+              </a>
+              <a
+                class="sc-kEfWCq duzGZb"
+                data-testid="personal-link-item-1"
+                href="/users"
+              >
+                <svg
+                  fill="none"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.657 3.34302C17.781 6.46702 17.781 11.533 14.657 14.657C11.533 17.781 6.467 17.781 3.343 14.657C0.219 11.533 0.219 6.46702 3.343 3.34302M9 1V9"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span
+                  style="font-weight: 500;"
+                >
+                  Sair
+                </span>
+                <div
+                  class="sc-fStzCH goNxFZ"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="contentArea"
+        >
+          <div
+            class="sc-kuPJbf euuNza"
+          >
+            <div
+              class="sc-hDqSpx hffQKN"
+            >
+              <header>
+                <span>
+                  🕑
+                </span>
+                <strong>
+                  Fila de espera
+                </strong>
+                <span>
+                  (
+                  0
+                  )
+                </span>
+              </header>
+            </div>
+            <div
+              class="sc-hDqSpx hffQKN"
+            >
+              <header>
+                <span>
+                  👩‍🍳
+                </span>
+                <strong>
+                  Em produção
+                </strong>
+                <span>
+                  (
+                  0
+                  )
+                </span>
+              </header>
+            </div>
+            <div
+              class="sc-hDqSpx hffQKN"
+            >
+              <header>
+                <span>
+                  ✅
+                </span>
+                <strong>
+                  Pronto!
+                </strong>
+                <span>
+                  (
+                  0
+                  )
+                </span>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Toastify"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-eCqEok biBLaP"
+    >
+      <div
+        class="headerArea"
+      >
+        <header
+          class="sc-ioBKGh kpTblq"
+        >
+          <div
+            class="sc-fGZLLs kfPLUS"
+          >
+            <div
+              class="sc-kNIewn gaRNlB"
+            >
+              <div
+                class="sc-fzyDgA dKQqWU"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  style="height: 32px; width: 32px;"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.5282 7.98627L13.7682 3.50595C12.7285 2.69667 11.2722 2.69667 10.2315 3.50595L4.47154 7.98627C3.76978 8.53251 3.35986 9.37155 3.35986 10.2595V17.2992C3.35986 18.8899 4.64914 20.1792 6.23986 20.1792H17.7599C19.3506 20.1792 20.6399 18.8899 20.6399 17.2992V10.2595C20.6399 9.37155 20.2299 8.53251 19.5282 7.98627Z"
+                    fill-rule="evenodd"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <h1
+                  class="sc-iggfBy FNvsr"
+                >
+                  Home
+                </h1>
+              </div>
+              <h2
+                class="sc-ihaCbp hMDFRk"
+              >
+                Acompanhe os pedidos dos clientes
+              </h2>
+            </div>
+            <button
+              class="sc-kGgVRv fXkGdi"
+            >
+              <svg
+                fill="none"
+                height="24"
+                style="color: rgb(215, 48, 53);"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20.0033C14.9314 20.0035 17.6284 18.4012 19.0299 15.8265"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M20.0033 12C20.0033 7.57992 16.4201 3.9967 12 3.9967"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M12.0001 3.9967C9.06875 3.99646 6.37178 5.59883 4.97021 8.17344"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M3.99658 12C3.99658 16.4201 7.5798 20.0033 11.9999 20.0033"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M4.97021 8.17335C6.71968 4.95833 10.4273 3.33982 13.9744 4.2427C17.5215 5.14558 20.004 8.33975 20.0035 11.9999"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M3.99658 12C3.99602 15.6602 6.4786 18.8544 10.0257 19.7572C13.5728 20.6601 17.2804 19.0416 19.0298 15.8266"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8.04526 8.17346H4.50879V4.63599"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M15.9546 15.8265H19.4911V19.364"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                class="sc-hYEWWG jXUiVQ"
+              >
+                Reiniciar o dia
+              </span>
+            </button>
+          </div>
+        </header>
+      </div>
+      <div
+        class="navigationBarArea"
+      >
+        <div
+          class="sc-lnAZsp kGobhS"
+        >
+          <svg
+            fill="none"
+            height="29"
+            viewBox="0 0 42 29"
+            width="42"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.212 24L12.404 13.272L9.596 24H5.012L0.644 6.768H5.084L7.412 17.04L10.148 6.768H14.732L17.372 17.088L19.724 6.768H24.164L19.772 24H15.212ZM28.2965 17.88H36.8405L37.2005 18.864H27.6725L28.2965 17.88ZM38.6645 24L32.4485 7.992L26.2085 24H25.0565L31.8485 6.768H33.1205L39.8645 24H38.6645Z"
+              fill="#666666"
+            />
+          </svg>
+          <div>
+            <a
+              class="sc-kEfWCq duzGZb"
+              data-testid="link-item-0"
+              href="/"
+            >
+              <svg
+                fill="none"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M19.5282 7.98627L13.7682 3.50595C12.7285 2.69667 11.2722 2.69667 10.2315 3.50595L4.47154 7.98627C3.76978 8.53251 3.35986 9.37155 3.35986 10.2595V17.2992C3.35986 18.8899 4.64914 20.1792 6.23986 20.1792H17.7599C19.3506 20.1792 20.6399 18.8899 20.6399 17.2992V10.2595C20.6399 9.37155 20.2299 8.53251 19.5282 7.98627Z"
+                  fill-rule="evenodd"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                style="font-weight: 500;"
+              >
+                Home
+              </span>
+              <div
+                class="sc-fStzCH goNxFZ"
+              />
+            </a>
+            <a
+              class="sc-kEfWCq duzGZb"
+              data-testid="link-item-1"
+              href="/history"
+            >
+              <svg
+                fill="none"
+                height="25"
+                viewBox="0 0 24 25"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 9.5H8M16 12.4999H8M13 15.5H8M19.449 20.896L18.459 21.3935C18.1785 21.5345 17.8481 21.5355 17.5667 21.3964L15.9942 20.6188L14.4533 21.3929C14.172 21.5342 13.8406 21.5348 13.5588 21.3945L12 20.6185L10.4412 21.3945C10.1594 21.5348 9.82799 21.5342 9.54668 21.3929L8.00578 20.6188L6.4333 21.3964C6.15191 21.5355 5.82151 21.5345 5.54102 21.3935L4.55102 20.896C4.21321 20.7263 4.00001 20.3805 4 20.0025V4.99752C4 4.61947 4.2132 4.27374 4.551 4.104L5.541 3.60648C5.82149 3.46552 6.15189 3.46446 6.43328 3.60361L8.00576 4.3812L9.54666 3.60713C9.82797 3.46581 10.1594 3.46521 10.4412 3.60551L12 4.38151L13.5588 3.60551C13.8406 3.46521 14.172 3.46581 14.4533 3.60713L15.9942 4.3812L17.5667 3.60361C17.8481 3.46446 18.1785 3.46552 18.459 3.60648L19.449 4.104C19.7868 4.27374 20 4.61946 20 4.99752V20.0025C20 20.3806 19.7868 20.7263 19.449 20.896Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                style="font-weight: 500;"
+              >
+                Histórico
+              </span>
+              <div
+                class="sc-fStzCH goNxFZ"
+              />
+            </a>
+            <a
+              class="sc-kEfWCq duzGZb"
+              data-testid="link-item-2"
+              href="/menu"
+            >
+              <svg
+                fill="none"
+                height="21"
+                viewBox="0 0 18 21"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 12.5H8M12 15.5H9M4 1.5V19.5M3 19.5H15C16.1046 19.5 17 18.6046 17 17.5V3.5C17 2.39543 16.1046 1.5 15 1.5H3C1.89543 1.5 1 2.39543 1 3.5V17.5C1 18.6046 1.89543 19.5 3 19.5ZM12.5 7.5C12.5 8.60457 11.6046 9.5 10.5 9.5C9.39543 9.5 8.5 8.60457 8.5 7.5C8.5 6.39543 9.39543 5.5 10.5 5.5C11.6046 5.5 12.5 6.39543 12.5 7.5Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                style="font-weight: 500;"
+              >
+                Cardapio
+              </span>
+              <div
+                class="sc-fStzCH goNxFZ"
+              />
+            </a>
+            <a
+              class="sc-kEfWCq duzGZb"
+              data-testid="link-item-3"
+              href="/users"
+            >
+              <svg
+                fill="none"
+                height="25"
+                viewBox="0 0 24 25"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="7.99835"
+                  cy="9.00854"
+                  r="3.49145"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="17.0021"
+                  cy="9.99897"
+                  r="2.50104"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M1.99585 20.5033V19.4859C1.99585 17.285 3.77959 15.5012 5.98051 15.5012H10.0162C12.2171 15.5012 14.0008 17.285 14.0008 19.4859V20.5033"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M17.0021 15.5012H18.1045C20.3055 15.5012 22.0892 17.285 22.0892 19.4859V20.5033"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                style="font-weight: 500;"
+              >
+                Usuários
+              </span>
+              <div
+                class="sc-fStzCH goNxFZ"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="sc-kEfWCq duzGZb"
+              data-testid="personal-link-item-0"
+              href="/users"
+            >
+              <svg
+                fill="none"
+                height="18"
+                viewBox="0 0 20 18"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.1 6.40002C13.3 7.60002 13.3 9.50002 12.1 10.6C10.9 11.7 9.00002 11.8 7.90002 10.6C6.80002 9.40002 6.70002 7.50002 7.90002 6.40002C9.10002 5.30002 10.9 5.20002 12.1 6.40002M3.90002 17C5.50002 15.5 7.60002 14.5 10 14.5C12.3 14.5 14.5 15.4 16.1 17M2 14C1.4 12.8 1 11.4 1 10C1 5 5 1 10 1C15 1 19 5 19 10C19 11.4 18.6 12.8 18 14"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                style="font-weight: 500;"
+              >
+                Meu Perfil
+              </span>
+              <div
+                class="sc-fStzCH goNxFZ"
+              />
+            </a>
+            <a
+              class="sc-kEfWCq duzGZb"
+              data-testid="personal-link-item-1"
+              href="/users"
+            >
+              <svg
+                fill="none"
+                height="18"
+                viewBox="0 0 18 18"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.657 3.34302C17.781 6.46702 17.781 11.533 14.657 14.657C11.533 17.781 6.467 17.781 3.343 14.657C0.219 11.533 0.219 6.46702 3.343 3.34302M9 1V9"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span
+                style="font-weight: 500;"
+              >
+                Sair
+              </span>
+              <div
+                class="sc-fStzCH goNxFZ"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contentArea"
+      >
+        <div
+          class="sc-kuPJbf euuNza"
+        >
+          <div
+            class="sc-hDqSpx hffQKN"
+          >
+            <header>
+              <span>
+                🕑
+              </span>
+              <strong>
+                Fila de espera
+              </strong>
+              <span>
+                (
+                0
+                )
+              </span>
+            </header>
+          </div>
+          <div
+            class="sc-hDqSpx hffQKN"
+          >
+            <header>
+              <span>
+                👩‍🍳
+              </span>
+              <strong>
+                Em produção
+              </strong>
+              <span>
+                (
+                0
+                )
+              </span>
+            </header>
+          </div>
+          <div
+            class="sc-hDqSpx hffQKN"
+          >
+            <header>
+              <span>
+                ✅
+              </span>
+              <strong>
+                Pronto!
+              </strong>
+              <span>
+                (
+                0
+                )
+              </span>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="Toastify"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
