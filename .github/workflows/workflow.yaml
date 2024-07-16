@@ -15,5 +15,5 @@ jobs:
       - name: run install, build and test
         working-directory: frontend
         run: |
-          npm install
-          npm run test
+          yarn install
+          yarn test
