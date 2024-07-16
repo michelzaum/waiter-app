@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: 20.x
       - name: run install, build and test
+        working-directory: frontend
         run: |
-          npm install
-          npm run test
+          yarn install
+          yarn test
