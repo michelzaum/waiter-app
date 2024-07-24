@@ -1,10 +1,16 @@
 import { AlertIcon } from '../../../assets/images/Icons/AlertIcon';
+import { CloseEyeIcon } from '../../../assets/images/Icons/CloseEyeIcon';
 import { OpenEyeIcon } from '../../../assets/images/Icons/OpenEyeIcon';
 import { LoginContainer, Approach, Form, FormFieldGroup, LoginButton, ErrorMessageContainer } from './styles';
 import { useLogin } from './useLogin';
 
 export function Login() {
-  const { isErrorMessageVisible } = useLogin();
+  const {
+    isErrorMessageVisible,
+    isPasswordVisible,
+    handlePasswordFieldType,
+    passwordFieldType,
+  } = useLogin();
 
   return (
     <LoginContainer>
@@ -20,9 +26,15 @@ export function Login() {
         <FormFieldGroup>
           <label htmlFor="inputPassword">Senha</label>
           <div>
-            <input id='inputPassword' type="password" placeholder='Informe sua senha' />
-            <button>
-              <OpenEyeIcon style={{ height: 14, width: 18 }} />
+            <input id='inputPassword' type={passwordFieldType} placeholder='Informe sua senha' />
+            <button type='button' onClick={handlePasswordFieldType}>
+              {
+                isPasswordVisible ? (
+                  <CloseEyeIcon />
+                ) : (
+                  <OpenEyeIcon />
+                )
+              }
             </button>
           </div>
           <ErrorMessageContainer>

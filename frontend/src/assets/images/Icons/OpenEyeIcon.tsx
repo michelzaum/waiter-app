@@ -2,30 +2,9 @@ import { IconProps } from "./model";
 
 export function OpenEyeIcon({ style }: IconProps) {
   return (
-  <svg
-    viewBox="0 0 20 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    style={style}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1.11824 8.467C0.961238 8.176 0.961238 7.823 1.11824 7.532C3.01024 4.033 6.50524 1 10.0002 1C13.4952 1 16.9902 4.033 18.8822 7.533C19.0392 7.824 19.0392 8.177 18.8822 8.468C16.9902 11.967 13.4952 15 10.0002 15C6.50524 15 3.01024 11.967 1.11824 8.467Z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.1215 5.87868C13.2931 7.05025 13.2931 8.94975 12.1215 10.1213C10.95 11.2929 9.05047 11.2929 7.8789 10.1213C6.70733 8.94975 6.70733 7.05025 7.8789 5.87868C9.05047 4.70711 10.95 4.70711 12.1215 5.87868Z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M3.11799 12.467C2.96099 12.176 2.96099 11.823 3.11799 11.532C5.00999 8.033 8.50499 5 12 5C15.495 5 18.99 8.033 20.882 11.533C21.039 11.824 21.039 12.177 20.882 12.468C18.99 15.967 15.495 19 12 19C8.50499 19 5.00999 15.967 3.11799 12.467Z" stroke="#666666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path fillRule="evenodd" clipRule="evenodd" d="M14.1213 9.87868C15.2929 11.0503 15.2929 12.9498 14.1213 14.1213C12.9497 15.2929 11.0502 15.2929 9.87865 14.1213C8.70708 12.9498 8.70708 11.0503 9.87865 9.87868C11.0502 8.70711 12.9497 8.70711 14.1213 9.87868Z" stroke="#666666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   )
 }
