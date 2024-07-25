@@ -7,17 +7,13 @@ export function useLogin() {
 
   const isErrorMessageVisible = false;
 
-  function setVisiblePassword(isVisible: boolean): void {
-    setIsPasswordVisible(isVisible);
-  }
-
   function handlePasswordFieldType(): void {
     if (passwordFieldType === PASSWORD_FIELD_TYPE.PASSWORD) {
       setPasswordFieldType(PASSWORD_FIELD_TYPE.TEXT);
-      setVisiblePassword(true);
+      setIsPasswordVisible(true);
     } else {
       setPasswordFieldType(PASSWORD_FIELD_TYPE.PASSWORD);
-      setVisiblePassword(false);
+      setIsPasswordVisible(false);
     }
   }
 
