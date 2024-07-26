@@ -6,10 +6,13 @@ import { useLogin } from './useLogin';
 
 export function Login() {
   const {
-    isErrorMessageVisible,
     isPasswordVisible,
     handlePasswordFieldType,
     passwordFieldType,
+    register,
+    handleSubmit,
+    onSubmit,
+    errors,
   } = useLogin();
 
   return (
@@ -18,18 +21,33 @@ export function Login() {
         <span>Bem vindo(a) ao</span>
         <h1>WAITER<span>APP</span></h1>
       </Approach>
-      <Form>
+      <Form onSubmit={handleSubmit(onSubmit)}>
         <FormFieldGroup>
           <label htmlFor="inputEmail">E-mail</label>
-          <input id='inputEmail' type="text" placeholder='Seu e-mail de acesso' />
+          <input
+            id='inputEmail'
+            type="text"
+            placeholder='Seu e-mail de acesso'
+            {...register('email')}
+          />
+          {errors.email && (
+            <ErrorMessageContainer>
+              <AlertIcon style={{ color: 'rgba(215, 48, 53, 1)' }} />
+              <span>{errors.email.message}</span>
+            </ErrorMessageContainer>
+          )}
         </FormFieldGroup>
         <FormFieldGroup>
           <label htmlFor="inputPassword">Senha</label>
           <div>
-            <input id='inputPassword' type={passwordFieldType} placeholder='Informe sua senha' />
+            <input
+              id='inputPassword'
+              type={passwordFieldType}
+              placeholder='Informe sua senha'
+              {...register('password')}
+            />
             <button type='button' onClick={handlePasswordFieldType}>
-              {
-                isPasswordVisible ? (
+              {isPasswordVisible ? (
                   <CloseEyeIcon />
                 ) : (
                   <OpenEyeIcon />
@@ -37,16 +55,12 @@ export function Login() {
               }
             </button>
           </div>
-          <ErrorMessageContainer>
-            {
-              isErrorMessageVisible && (
-                <>
-                  <AlertIcon style={{ color: 'rgba(215, 48, 53, 1)' }} />
-                  <span>Usuário ou senha inválidos</span>
-                </>
-              )
-            }
-          </ErrorMessageContainer>
+          {errors.password && (
+            <ErrorMessageContainer>
+              <AlertIcon style={{ color: 'rgba(215, 48, 53, 1)' }} />
+              <span>{errors.password.message}</span>
+            </ErrorMessageContainer>
+          )}
         </FormFieldGroup>
         <LoginButton>Fazer Login</LoginButton>
       </Form>
