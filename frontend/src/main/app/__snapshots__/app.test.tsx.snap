@@ -132,7 +132,7 @@ exports[`App > Should render the App component 1`] = `
           class="navigationBarArea"
         >
           <div
-            class="sc-lnAZsp kGobhS"
+            class="sc-lnAZsp cDdVsR"
           >
             <svg
               fill="none"
@@ -544,7 +544,7 @@ exports[`App > Should render the App component 1`] = `
         class="navigationBarArea"
       >
         <div
-          class="sc-lnAZsp kGobhS"
+          class="sc-lnAZsp cDdVsR"
         >
           <svg
             fill="none"

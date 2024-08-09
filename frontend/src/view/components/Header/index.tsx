@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom';
 import {
   Container,
   Content,
@@ -21,10 +22,7 @@ export function Header() {
       <Content>
         <PageDetails>
           <Title>
-            {<HomeIcon style={{
-              height: 32,
-              width: 32
-            }} />}
+            <HomeIcon style={{ height: 32, width: 32 }} />
             <PageName>Home</PageName>
           </Title>
           <PageDescription>Acompanhe os pedidos dos clientes</PageDescription>
@@ -34,10 +32,15 @@ export function Header() {
           <RestartDayText>Reiniciar o dia</RestartDayText>
         </RestartDay>
       </Content>
-      <RestartDayModal
-        isVisible={isRestartDayModalOpen}
-        onClose={closeRestartDayModal}
-      />
+      {
+        createPortal(
+          <RestartDayModal
+            isVisible={isRestartDayModalOpen}
+            onClose={closeRestartDayModal}
+          />,
+          document.getElementById('restart-day-root') ?? document.body
+        )
+      }
     </Container>
   )
 }
