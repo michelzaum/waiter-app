@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const NavigationBarContainer = styled.div`
-  height: 100%;
+  height: 100vh;
   position: absolute;
-  left: 0;
-  top: 0;
   padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
