@@ -1,4 +1,8 @@
 import { FilterIcon } from '../../../assets/images/Icons/FilterIcon';
+import { OpenEyeIcon } from '../../../assets/images/Icons/OpenEyeIcon';
+import { TrashIcon } from '../../../assets/images/Icons/TrashIcon';
+import { formatCurrency } from '../../../utils/formatCurrency';
+import { OrderDetailsModal } from './OrderDetailsModal';
 import {
   Container,
   Title,
@@ -9,34 +13,50 @@ import {
   TableData,
   TableRowHeader,
   TableRowData,
+  ActionsContainer,
 } from './styles';
+import { Order } from './types';
+import { useOrderHistory } from './useOrderHistory';
 
 const ordersHistoryColumns = [
   'Mesa', 'Data', 'Nome', 'Categoria', 'Total', 'Ações',
 ];
 
-const ordersHistoryMockData = [
+const ordersHistoryMockData: Order[] = [
   {
-    id: 1,
+    id: "1",
     table: 1,
     date: '07/12/2022',
-    name: 'Frango com catupiry, Quatro queijos',
+    products: [
+    {
+      id: '2',
+      imagePath: '1706326587096-frango-catupiry.png',
+      name: 'Frango com Catupiry',
+      price: 30,
+      quantity: 1,
+    },
+    {
+      id: '3',
+      imagePath: '1686095987313-quatro-queijos.png',
+      name: 'Quatro queijos',
+      price: 27,
+      quantity: 1,
+    },
+  ],
     category: 'Pizza',
-    total: 'R$ 40,00',
-    actions: 'ver/excluir',
-  },
-  {
-    id: 2,
-    table: 2,
-    date: '07/12/2022',
-    name: 'Frango com catupiry, Quatro queijos',
-    category: 'Pizza',
-    total: 'R$ 40,00',
-    actions: 'ver/excluir',
   },
 ];
 
 export function OrdersHistory() {
+  const {
+    orderData,
+    isOrderDetailsModalOpen,
+    openOrderDetailsModal,
+    closeOrderDetailsModal,
+    handleDeleteOrderRegister,
+    deleteOrder,
+  } = useOrderHistory();
+
   return (
     <Container>
       <TitleContainer>
@@ -59,14 +79,37 @@ export function OrdersHistory() {
             <TableRowData key={tableData.id}>
               <TableData>{tableData.table}</TableData>
               <TableData>{tableData.date}</TableData>
-              <TableData>{tableData.name}</TableData>
+              <TableData>
+                {tableData.products.map(product => (
+                  product.name
+                )).join(', ')}
+              </TableData>
               <TableData>{tableData.category}</TableData>
-              <TableData>{tableData.total}</TableData>
-              <TableData>{tableData.actions}</TableData>
+              <TableData>
+                {formatCurrency(tableData.products.reduce((total, product) => {
+                  return total + product.price;
+                }, 0))}
+              </TableData>
+              <TableData>
+                <ActionsContainer>
+                  <button type='button' onClick={() => openOrderDetailsModal(tableData)}>
+                    <OpenEyeIcon />
+                  </button>
+                  <button type='button' onClick={() => handleDeleteOrderRegister(() => deleteOrder(tableData.id))}>
+                    <TrashIcon style={{ color: '#D73035' }} />
+                  </button>
+                </ActionsContainer>
+              </TableData>
             </TableRowData>
           ))}
         </tbody>
       </Table>
+      <OrderDetailsModal
+        visible={isOrderDetailsModalOpen}
+        data={orderData}
+        onClose={closeOrderDetailsModal}
+        onDelete={() => handleDeleteOrderRegister(() => deleteOrder(orderData.id))}
+      />
     </Container>
   )
 }
