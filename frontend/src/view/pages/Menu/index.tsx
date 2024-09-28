@@ -1,3 +1,4 @@
+import { NewProduct } from './NewProduct';
 import {
   Container,
   Title,
@@ -11,6 +12,7 @@ import {
   TableRowHeader,
   TableRowData,
 } from './styles';
+import { useMenu } from './useMenu';
 
 const menuColumns = [
   'Imagem', 'Nome', 'Categoria', 'Preço', 'Ações',
@@ -36,6 +38,8 @@ const menuMockData = [
 ];
 
 export function Menu() {
+  const { isNewProductModalOpen, openNewProductModal, closeNewProductModal } = useMenu();
+
   return (
     <Container>
       <TitleContainer>
@@ -43,7 +47,7 @@ export function Menu() {
           <Title>Produtos</Title>
           <DataCount>{menuMockData.length}</DataCount>
         </DataCountContainer>
-        <RightAction>
+        <RightAction onClick={openNewProductModal}>
           Novo produto
         </RightAction>
       </TitleContainer>
@@ -69,6 +73,10 @@ export function Menu() {
           ))}
         </tbody>
       </Table>
+      <NewProduct
+        isVisible={isNewProductModalOpen}
+        onClose={closeNewProductModal}
+      />
     </Container>
   )
 }
