@@ -66,3 +66,14 @@ export const TableData = styled.td`
   padding: 1rem;
   border-bottom: 1px solid rgba(204, 204, 204, 0.4);
 `;
+
+export const ActionsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    background: transparent;
+    border: none;
+  }
+`;
