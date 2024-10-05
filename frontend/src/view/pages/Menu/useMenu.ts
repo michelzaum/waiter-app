@@ -1,5 +1,5 @@
 import { ChangeEvent, useEffect, useState } from "react";
-import { Emoji, Ingredient, ingredientsMock } from "./types";
+import { DeletedProductDetails, Emoji, Ingredient, ingredientsMock } from "./types";
 
 export function useMenu() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -10,9 +10,18 @@ export function useMenu() {
   const [selectedEmoji, setSelectedEmoji] = useState('');
   const [filteredIngredientsList, setFilteredIngredientsList] = useState<Ingredient[]>([]);
   const [searchedIngredient, setSearchedIngredient] = useState('');
-  const [selectedIngredients, setSelectedIngredients] = useState<Array<String>>(['']);
+  const [selectedIngredients, setSelectedIngredients] = useState<Array<string>>(['']);
+  const [isDeleteProductModalOpen, setIsDeleteProductModalOpen] = useState(false);
+  const [productData, setProductData] = useState<DeletedProductDetails>({} as DeletedProductDetails);
 
   useEffect(() => {
+    async function getEmojiList(): Promise<void> {
+      const url = 'https://emojihub.yurace.pro/api/all/category/food-and-drink';
+      const response = await fetch(url);
+      const data: Emoji[] = await response.json();
+      setEmojiList(convertHtmlCodeIntoEmoji(data));
+    }
+
     getEmojiList();
   }, []);
 
@@ -60,6 +69,15 @@ export function useMenu() {
     setSelectedCategory(categoryId);
   }
 
+  function openDeleteProductModal(productData: DeletedProductDetails) {
+    setProductData(productData);
+    setIsDeleteProductModalOpen(true);
+  }
+
+  function closeDeleteProductModal() {
+    setIsDeleteProductModalOpen(false);
+  }
+
   function openNewProductModal(): void {
     setIsNewProductModalOpen(true);
   }
@@ -99,13 +117,6 @@ export function useMenu() {
     return emojiList;
   }
 
-  async function getEmojiList(): Promise<void> {
-    const url = 'https://emojihub.yurace.pro/api/all/category/food-and-drink';
-    const response = await fetch(url);
-    const data: Emoji[] = await response.json();
-    setEmojiList(convertHtmlCodeIntoEmoji(data));
-  }
-
   return {
     selectedCategory,
     handleSelectedCategory,
@@ -126,5 +137,9 @@ export function useMenu() {
     setSearchedIngredient,
     handleSelectedIngredients,
     selectedIngredients,
+    openDeleteProductModal,
+    closeDeleteProductModal,
+    isDeleteProductModalOpen,
+    productData,
   }
 }

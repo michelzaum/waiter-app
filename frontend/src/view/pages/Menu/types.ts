@@ -25,6 +25,20 @@ export interface NewProductProps {
   onClose(): void;
 }
 
+export interface DeleteProductModalProps {
+  isVisible: boolean;
+  onClose(): void;
+  productData: DeletedProductDetails
+}
+
+export interface DeletedProductDetails {
+  id: string;
+  imagePath: string;
+  name: string;
+  price: number;
+  category: string;
+}
+
 export const ingredientsMock = [
   { id: '1', emoji: '🧀', name: 'Queijo prato' },
   { id: '2', emoji: '🧀', name: 'Queijo Cheddar' },
