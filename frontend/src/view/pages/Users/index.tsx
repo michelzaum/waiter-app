@@ -1,39 +1,32 @@
+import { EditIcon } from '../../../assets/images/Icons/EditIcon';
+import { TrashIcon } from '../../../assets/images/Icons/TrashIcon';
+import { DeleteUserModal } from './DeleteUserModal';
 import {
+  ActionsContainer,
   Container,
-  Title,
-  RightAction,
   DataCount,
-  TitleContainer,
   DataCountContainer,
+  RightAction,
   Table,
-  TableHeader,
   TableData,
-  TableRowHeader,
+  TableHeader,
   TableRowData,
+  TableRowHeader,
+  Title,
+  TitleContainer,
 } from './styles';
-
-const usersColumns = [
-  'Nome', 'E-mail', 'Cargo', 'Ações',
-];
-
-const usersMockData = [
-  {
-    id: 1,
-    name: 'Fulano de Tal',
-    email: 'fulano@gmail.com',
-    role: 'Garçom',
-    actions: 'ver/excluir',
-  },
-  {
-    id: 2,
-    name: 'Fulano de Tal',
-    email: 'fulano@gmail.com',
-    role: 'Garçom',
-    actions: 'ver/excluir',
-  },
-];
+import { usersColumns, usersMockData } from './types';
+import { useUsers } from './useUsers';
 
 export function Users() {
+  const {
+    handleOpenDeleteUserModal,
+    handleCloseDeleteUserModal,
+    isDeleteUserModalVisible,
+    deletedUserData,
+    onDeleteUser,
+  } = useUsers();
+
   return (
     <Container>
       <TitleContainer>
@@ -61,11 +54,26 @@ export function Users() {
               <TableData>{tableData.name}</TableData>
               <TableData>{tableData.email}</TableData>
               <TableData>{tableData.role}</TableData>
-              <TableData>{tableData.actions}</TableData>
+              <TableData>
+                <ActionsContainer>
+                  <button type='button'>
+                    <EditIcon />
+                  </button>
+                  <button type='button' onClick={() => handleOpenDeleteUserModal(tableData)}>
+                    <TrashIcon style={{ color: '#D73035' }} />
+                  </button>
+                </ActionsContainer>
+              </TableData>
             </TableRowData>
           ))}
         </tbody>
       </Table>
+      <DeleteUserModal
+        isVisible={isDeleteUserModalVisible}
+        onClose={handleCloseDeleteUserModal}
+        data={deletedUserData}
+        onDeleteUser={onDeleteUser}
+      />
     </Container>
   )
 }

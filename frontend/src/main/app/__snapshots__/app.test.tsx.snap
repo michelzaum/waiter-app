@@ -6,22 +6,22 @@ exports[`App > Should render the App component 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-fRRacc epuCKy"
+        class="sc-eouPUe cZoUmG"
       >
         <div
           class="headerArea"
         >
           <header
-            class="sc-dsAgYy dntfTz"
+            class="sc-kJNKdp gNRPGC"
           >
             <div
-              class="sc-esMGxx iOpIXS"
+              class="sc-lidqDK dpuWbp"
             >
               <div
-                class="sc-bilbcQ hyZYpu"
+                class="sc-jrtRAX gINozC"
               >
                 <div
-                  class="sc-blbzHg hYuBMO"
+                  class="sc-hfAMFG cvgOSA"
                 >
                   <svg
                     fill="none"
@@ -40,19 +40,19 @@ exports[`App > Should render the App component 1`] = `
                     />
                   </svg>
                   <h1
-                    class="sc-dAmtvz kcEVdH"
+                    class="sc-ixUFhY ckIHtI"
                   >
                     Home
                   </h1>
                 </div>
                 <h2
-                  class="sc-pKOaS WjBDn"
+                  class="sc-gHlgfl bHnuJn"
                 >
                   Acompanhe os pedidos dos clientes
                 </h2>
               </div>
               <button
-                class="sc-kJNKdp eSRHiD"
+                class="sc-foRnCT hcfzBt"
               >
                 <svg
                   fill="none"
@@ -120,7 +120,7 @@ exports[`App > Should render the App component 1`] = `
                   />
                 </svg>
                 <span
-                  class="sc-lidqDK grJTkc"
+                  class="sc-bA-dQQA fbJXpY"
                 >
                   Reiniciar o dia
                 </span>
@@ -132,7 +132,7 @@ exports[`App > Should render the App component 1`] = `
           class="navigationBarArea"
         >
           <div
-            class="sc-bA-dQQA hLxiEA"
+            class="sc-ewQuYN bRxscW"
           >
             <svg
               fill="none"
@@ -148,7 +148,7 @@ exports[`App > Should render the App component 1`] = `
             </svg>
             <div>
               <a
-                class="sc-kYQbmJ jFyVfI"
+                class="sc-bPowdY fWpNNR"
                 data-testid="link-item-0"
                 href="/"
               >
@@ -173,11 +173,11 @@ exports[`App > Should render the App component 1`] = `
                   Home
                 </span>
                 <div
-                  class="sc-izsYWR iQBrvp"
+                  class="sc-gVWOOT cbqNzP"
                 />
               </a>
               <a
-                class="sc-kYQbmJ jFyVfI"
+                class="sc-bPowdY fWpNNR"
                 data-testid="link-item-1"
                 href="/history"
               >
@@ -202,11 +202,11 @@ exports[`App > Should render the App component 1`] = `
                   Histórico
                 </span>
                 <div
-                  class="sc-izsYWR iQBrvp"
+                  class="sc-gVWOOT cbqNzP"
                 />
               </a>
               <a
-                class="sc-kYQbmJ jFyVfI"
+                class="sc-bPowdY fWpNNR"
                 data-testid="link-item-2"
                 href="/menu"
               >
@@ -231,11 +231,11 @@ exports[`App > Should render the App component 1`] = `
                   Cardapio
                 </span>
                 <div
-                  class="sc-izsYWR iQBrvp"
+                  class="sc-gVWOOT cbqNzP"
                 />
               </a>
               <a
-                class="sc-kYQbmJ jFyVfI"
+                class="sc-bPowdY fWpNNR"
                 data-testid="link-item-3"
                 href="/users"
               >
@@ -285,13 +285,13 @@ exports[`App > Should render the App component 1`] = `
                   Usuários
                 </span>
                 <div
-                  class="sc-izsYWR iQBrvp"
+                  class="sc-gVWOOT cbqNzP"
                 />
               </a>
             </div>
             <div>
               <a
-                class="sc-kYQbmJ jFyVfI"
+                class="sc-bPowdY fWpNNR"
                 data-testid="personal-link-item-0"
                 href="/users"
               >
@@ -316,11 +316,11 @@ exports[`App > Should render the App component 1`] = `
                   Meu Perfil
                 </span>
                 <div
-                  class="sc-izsYWR iQBrvp"
+                  class="sc-gVWOOT cbqNzP"
                 />
               </a>
               <a
-                class="sc-kYQbmJ jFyVfI"
+                class="sc-bPowdY fWpNNR"
                 data-testid="personal-link-item-1"
                 href="/users"
               >
@@ -345,7 +345,7 @@ exports[`App > Should render the App component 1`] = `
                   Sair
                 </span>
                 <div
-                  class="sc-izsYWR iQBrvp"
+                  class="sc-gVWOOT cbqNzP"
                 />
               </a>
             </div>
@@ -418,22 +418,22 @@ exports[`App > Should render the App component 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-fRRacc epuCKy"
+      class="sc-eouPUe cZoUmG"
     >
       <div
         class="headerArea"
       >
         <header
-          class="sc-dsAgYy dntfTz"
+          class="sc-kJNKdp gNRPGC"
         >
           <div
-            class="sc-esMGxx iOpIXS"
+            class="sc-lidqDK dpuWbp"
           >
             <div
-              class="sc-bilbcQ hyZYpu"
+              class="sc-jrtRAX gINozC"
             >
               <div
-                class="sc-blbzHg hYuBMO"
+                class="sc-hfAMFG cvgOSA"
               >
                 <svg
                   fill="none"
@@ -452,19 +452,19 @@ exports[`App > Should render the App component 1`] = `
                   />
                 </svg>
                 <h1
-                  class="sc-dAmtvz kcEVdH"
+                  class="sc-ixUFhY ckIHtI"
                 >
                   Home
                 </h1>
               </div>
               <h2
-                class="sc-pKOaS WjBDn"
+                class="sc-gHlgfl bHnuJn"
               >
                 Acompanhe os pedidos dos clientes
               </h2>
             </div>
             <button
-              class="sc-kJNKdp eSRHiD"
+              class="sc-foRnCT hcfzBt"
             >
               <svg
                 fill="none"
@@ -532,7 +532,7 @@ exports[`App > Should render the App component 1`] = `
                 />
               </svg>
               <span
-                class="sc-lidqDK grJTkc"
+                class="sc-bA-dQQA fbJXpY"
               >
                 Reiniciar o dia
               </span>
@@ -544,7 +544,7 @@ exports[`App > Should render the App component 1`] = `
         class="navigationBarArea"
       >
         <div
-          class="sc-bA-dQQA hLxiEA"
+          class="sc-ewQuYN bRxscW"
         >
           <svg
             fill="none"
@@ -560,7 +560,7 @@ exports[`App > Should render the App component 1`] = `
           </svg>
           <div>
             <a
-              class="sc-kYQbmJ jFyVfI"
+              class="sc-bPowdY fWpNNR"
               data-testid="link-item-0"
               href="/"
             >
@@ -585,11 +585,11 @@ exports[`App > Should render the App component 1`] = `
                 Home
               </span>
               <div
-                class="sc-izsYWR iQBrvp"
+                class="sc-gVWOOT cbqNzP"
               />
             </a>
             <a
-              class="sc-kYQbmJ jFyVfI"
+              class="sc-bPowdY fWpNNR"
               data-testid="link-item-1"
               href="/history"
             >
@@ -614,11 +614,11 @@ exports[`App > Should render the App component 1`] = `
                 Histórico
               </span>
               <div
-                class="sc-izsYWR iQBrvp"
+                class="sc-gVWOOT cbqNzP"
               />
             </a>
             <a
-              class="sc-kYQbmJ jFyVfI"
+              class="sc-bPowdY fWpNNR"
               data-testid="link-item-2"
               href="/menu"
             >
@@ -643,11 +643,11 @@ exports[`App > Should render the App component 1`] = `
                 Cardapio
               </span>
               <div
-                class="sc-izsYWR iQBrvp"
+                class="sc-gVWOOT cbqNzP"
               />
             </a>
             <a
-              class="sc-kYQbmJ jFyVfI"
+              class="sc-bPowdY fWpNNR"
               data-testid="link-item-3"
               href="/users"
             >
@@ -697,13 +697,13 @@ exports[`App > Should render the App component 1`] = `
                 Usuários
               </span>
               <div
-                class="sc-izsYWR iQBrvp"
+                class="sc-gVWOOT cbqNzP"
               />
             </a>
           </div>
           <div>
             <a
-              class="sc-kYQbmJ jFyVfI"
+              class="sc-bPowdY fWpNNR"
               data-testid="personal-link-item-0"
               href="/users"
             >
@@ -728,11 +728,11 @@ exports[`App > Should render the App component 1`] = `
                 Meu Perfil
               </span>
               <div
-                class="sc-izsYWR iQBrvp"
+                class="sc-gVWOOT cbqNzP"
               />
             </a>
             <a
-              class="sc-kYQbmJ jFyVfI"
+              class="sc-bPowdY fWpNNR"
               data-testid="personal-link-item-1"
               href="/users"
             >
@@ -757,7 +757,7 @@ exports[`App > Should render the App component 1`] = `
                 Sair
               </span>
               <div
-                class="sc-izsYWR iQBrvp"
+                class="sc-gVWOOT cbqNzP"
               />
             </a>
           </div>
